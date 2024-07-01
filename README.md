@@ -22,4 +22,7 @@ Later on data on kafka topic bein read by Spark Structured read module`s readstr
 
 Source code can be found on notebook (https://github.com/Giray18/spark_stream_job/blob/main/notebooks/cdc_kafka_spark.ipynb)
 
+Final dataframe screenshot can be seen below 
+
+![picture alt](drawio/final_stream_dataframe.jpg) 
 
