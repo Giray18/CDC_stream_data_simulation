@@ -13,6 +13,8 @@ Below flow diagram illustrates what has done over as a summary.
 2 tables used from sakila database of sample mysql db. Customers and address tables used. Since there is a FK constraints between 2 tables
 Method designed to be able to make ingestion aligned with that fact.
 
+Details regarding to created python method for data ingestion can be found on .py file (https://github.com/Giray18/data_analysis_tool/blob/main/src/mysql_analyzer/mysql_pandas.py) class mysql_profiler fake_record_creator_sakila method.
+
 ![picture alt](drawio/mysql_tables.JPG) 
 
 
