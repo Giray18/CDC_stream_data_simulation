@@ -9,4 +9,17 @@ Finally, stream data read by Spark Structured Streaming read data methods and ag
 With combination of 3 structure mentioned above a seamless, non-interrupted data read-write operations executed as long as new data inserted into RDBMS database.
 Below flow diagram illustrates what has done over as a summary.
 
+## Flow Diagram
 ![picture alt](drawio/flow_diagram.jpg) 
+
+
+As defined on flow diagram, data ingestion is done by using a method that creates fake data by faker package and ingests into MYSQL tables. As soon as tables populated with INSERT data to customers table a TRIGGER runs to log details into a CDC TABLE (users_change_events). Every time 20 fake customer data being inserted.
+Timestamp of latest log also being saved into table named as latest_cdc_timestamp to use in kafka ingestion phase for comparing latest ingestion time between users_change_events table and latest_cdc_timestamp table.
+
+If timestamp on latest_cdc_timestamp is older than users_change_events table then Kafka producer module produce data to defined Kafka topic.
+
+Later on data on kafka topic bein read by Spark Structured read module`s readstream method. After applying some modifications on data window functions applied to calculate count of customer registiration by store id.
+
+Source code can be found on notebook (https://github.com/Giray18/spark_stream_job/blob/main/notebooks/cdc_kafka_spark.ipynb)
+
+
