@@ -27,3 +27,11 @@ Final dataframe screenshot can be seen below
 ![picture alt](drawio/final_stream_dataframe.JPG)  
 
 As defined, to initiate data flow explained above only running notebook located on (https://github.com/Giray18/spark_stream_job/blob/main/notebooks/cdc_kafka_spark.ipynb) will be enough
+
+## Elements of Repository
+### Drawio : Folder holding drawings used on ReadME
+
+### Notebooks : Folder holding jupyter notebooks used on development
+
+
+
