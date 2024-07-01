@@ -9,6 +9,13 @@ Finally, stream data read by Spark Structured Streaming read data methods and ag
 With combination of 3 structure mentioned above a seamless, non-interrupted data read-write operations executed as long as new data inserted into RDBMS database.
 Below flow diagram illustrates what has done over as a summary.
 
+## Schema of RDBMS tables (MYSQL)
+2 tables used from sakila database of sample mysql db. Customers and address tables used. Since there is a FK constraints between 2 tables
+Method designed to be able to make ingestion aligned with that fact.
+
+![picture alt](drawio/mysql_tables.jpg) 
+
+
 ## Flow Diagram
 ![picture alt](drawio/flow_diagram.jpg) 
 
@@ -28,10 +35,14 @@ Final dataframe screenshot can be seen below
 
 As defined, to initiate data flow explained above only running notebook located on (https://github.com/Giray18/spark_stream_job/blob/main/notebooks/cdc_kafka_spark.ipynb) will be enough
 
-## Elements of Repository
-### Drawio : Folder holding drawings used on ReadME
 
-### Notebooks : Folder holding jupyter notebooks used on development
+
+## Elements of Repository
+### Drawio : 
+Folder holding drawings used on ReadME
+
+### Notebooks : 
+Folder holding jupyter notebooks used on development
 
 
 
