@@ -9,4 +9,4 @@ Finally, stream data read by Spark Structured Streaming read data methods and ag
 With combination of 3 structure mentioned above a seamless, non-interrupted data read-write operations executed as long as new data inserted into RDBMS database.
 Below flow diagram illustrates what has done over as a summary.
 
-![picture alt](spark_stream_job/drawio/flow_diagram.jpg)  
+![picture alt](spark_stream_job/drawio/flow_diagram.jpg) 
