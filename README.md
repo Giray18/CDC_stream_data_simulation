@@ -3,9 +3,9 @@
 ## Scenario
 Analytics department would like to see distribution of customer registration operations by store in real time. Target is to see how many customer being registered from a store in time windows of ... minutes of intervals.
 
-To simulate solution for above requirement, In this tutorial a data flow set up to simulate CDC on a RDBMS database (MYSQL). Afterwards, Data filtered by CDC log timestamps written into a KAFKA topic to be an available stream source for downstream systems.
+To simulate solution for above requirement, In this tutorial a data flow set up to simulate CDC on a RDBMS database (MYSQL). Afterwards, Data filtered by CDC log timestamps then written into a KAFKA topic to be an available stream source for downstream systems.
 
-Finally, stream data read by Spark Structured Streaming read methods and aggregate functions applied to find result of simple analytical query required above.
+Finally, stream data read by Spark Structured Streaming read methods from Kafka Topic`s related topic offset and aggregate functions applied to find result of simple analytical query required above.
 
 With combination of 3 structure mentioned above a seamless, non-interrupted data read-write operations executed as long as new data inserted into RDBMS database.
 
