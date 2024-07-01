@@ -34,7 +34,7 @@ Timestamp of latest log also being saved into table named as latest_cdc_timestam
 
 If timestamp on latest_cdc_timestamp is older than users_change_events table then Kafka producer module produce data to defined Kafka topic.
 
-Later on data on kafka topic bein read by Spark Structured read module`s readstream method. After applying some modifications on data window functions applied to calculate count of customer registiration by store id.
+Later on data on kafka topic being read by Spark Structured read module`s readstream method. After applying some modifications on data window functions applied to calculate count of customer registiration by store id.
 
 Source code can be found on notebook (https://github.com/Giray18/spark_stream_job/blob/main/notebooks/cdc_kafka_spark.ipynb)
 
