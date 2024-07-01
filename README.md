@@ -9,7 +9,7 @@ Finally, stream data read by Spark Structured Streaming read methods and aggrega
 
 With combination of 3 structure mentioned above a seamless, non-interrupted data read-write operations executed as long as new data inserted into RDBMS database.
 
-Below flow diagram illustrates what has done over as a summary.
+
 
 ## Schema of RDBMS source tables (MYSQL)
 According to our scenario, customer data first being saved to that database.
@@ -23,6 +23,9 @@ Details regarding to created python method for data ingestion can be found on .p
 
 
 ## Flow Diagram
+
+Below flow diagram illustrates what has done over as a summary.
+
 ![picture alt](drawio/flow_diagram.jpg) 
 
 
