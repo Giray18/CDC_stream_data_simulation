@@ -13,7 +13,7 @@ Below flow diagram illustrates what has done over as a summary.
 2 tables used from sakila database of sample mysql db. Customers and address tables used. Since there is a FK constraints between 2 tables
 Method designed to be able to make ingestion aligned with that fact.
 
-![picture alt](drawio/mysql_tables.jpg) 
+![picture alt](drawio/mysql_tables.JPG) 
 
 
 ## Flow Diagram
