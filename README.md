@@ -24,5 +24,5 @@ Source code can be found on notebook (https://github.com/Giray18/spark_stream_jo
 
 Final dataframe screenshot can be seen below 
 
-![picture alt](drawio/final_stream_dataframe.jpg) 
+![picture alt](drawio/final_stream_dataframe.jpg)  
 
